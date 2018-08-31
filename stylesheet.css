@@ -109,9 +109,13 @@ nav a:focus::after {
     cursor: pointer;
     font-size: var(--subtitle-size);
     margin-bottom: 0;
-    transition: margin-bottom 500ms ease-out;
 }
 
-.experience-link-container p:hover {
-     margin-bottom: 15px;
+.experience-link-container img {
+    transition: transform 500ms ease-out;
+}
+
+.experience-link-container p:hover ~ img {
+     transform: translateY(15px);
  }
+
