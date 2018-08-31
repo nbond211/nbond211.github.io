@@ -1,0 +1,16 @@
+:root {
+    --color-background: #807FB9;
+    --color-circle: #F37782;
+    --color-text: #FCF9F0;
+}
+
+body {
+    color: var(--color-text);
+    background-color: var(--color-background);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.scene path {
+    fill: var(--color-circle);
+}
