@@ -8,7 +8,7 @@
     --bold-weight: 700;
     --title-size: 50px;
     --subtitle-size: 25px;
-    --body-size: 16px;
+    --body-size: 18px;
 }
 
 body {
@@ -85,6 +85,7 @@ nav a:focus::after {
     align-items: center;
     flex-direction: column;
     margin-bottom: 100px;
+    padding: 0 50px;
 }
 
 .title {
@@ -103,6 +104,7 @@ nav a:focus::after {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .experience-link-container p {
@@ -117,5 +119,57 @@ nav a:focus::after {
 
 .experience-link-container p:hover ~ img {
      transform: translateY(15px);
+}
+
+.experience-container {
+    padding: 0 50px;
+}
+
+.item-heading {
+    display: flex;
+    align-items: center;
+    font-size: var(--subtitle-size);
+}
+
+.item-heading p {
+     margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
  }
+
+.item-heading img {
+    margin-right: 10px;
+}
+
+.item-heading .job {
+    font-weight: var(--bold-weight);
+}
+
+.item-heading .job span {
+    font-weight: var(--regular-weight);
+}
+
+.item-heading .secondary-info {
+    display: flex;
+    align-items: center;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 15px;
+}
+
+.list ul {
+    list-style-image: url('assets/arrow-right.svg');
+}
+
+.list li {
+    font-size: var(--body-size);
+    margin-bottom: 7px;
+}
 
