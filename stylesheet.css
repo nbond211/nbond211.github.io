@@ -84,6 +84,7 @@ nav a:focus::after {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 
 .title {
@@ -96,3 +97,21 @@ nav a:focus::after {
 .title-emphasis {
     font-weight: var(--bold-weight);
 }
+
+.experience-link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-link-container p {
+    cursor: pointer;
+    font-size: var(--subtitle-size);
+    margin-bottom: 0;
+    transition: margin-bottom 500ms ease-out;
+}
+
+.experience-link-container p:hover {
+     margin-bottom: 15px;
+ }
