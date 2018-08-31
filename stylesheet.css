@@ -2,15 +2,46 @@
     --color-background: #807FB9;
     --color-circle: #F37782;
     --color-text: #FCF9F0;
+
+    --font: 'Poppins';
+    --regular-weight: 400;
+    --bold-weight: 700;
+    --title-size: 50px;
+    --subtitle-size: 25px;
+    --body-size: 16px;
 }
 
 body {
     color: var(--color-text);
     background-color: var(--color-background);
+    font-family: var(--font), sans-serif;
+    line-height: 1.3;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
+.scene {
+    position: fixed;
+    z-index: -1;
+}
+
 .scene path {
     fill: var(--color-circle);
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: var(--title-size);
+    font-weight: var(--regular-weight);
+    max-width: 990px;
+}
+
+.title-emphasis {
+    font-weight: var(--bold-weight);
 }
