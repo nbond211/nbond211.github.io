@@ -2,6 +2,7 @@
     --color-background: #807FB9;
     --color-circle: #F37782;
     --color-text: #FCF9F0;
+    --color-link: #FFD24A;
 
     --font: 'Poppins';
     --regular-weight: 400;
@@ -138,6 +139,26 @@ nav a:focus::after {
     margin-bottom: 75px;
 }
 
+.experience-item a {
+    color: var(--color-link);
+    font-weight: var(--bold-weight);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.experience-item a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--color-link);
+    transition: width .5s;
+}
+
+.experience-item a:hover::after {
+    width: 100%;
+}
+
 .item-heading {
     display: flex;
     align-items: center;
@@ -231,5 +252,9 @@ ul, menu, dir {
 
 .top-link:hover img {
     transform: rotate(180deg) translateY(15px);
+}
+
+ul {
+    max-width: 1200px;
 }
 
