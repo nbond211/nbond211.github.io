@@ -12,6 +12,10 @@
     --body-size: 18px;
     --small-size: 14px;
 
+    --tablet-title-size: 40px;
+    --mobile-title-size: 35px;
+    --xs-title-size: 25px;
+
     --mobile-subtitle-size: 20px;
     --mobile-body-size: 16px;
     --mobile-small-size: 13px;
@@ -326,5 +330,36 @@ ul {
 
     .secondary-info img {
         display: none;
+    }
+}
+
+@media (max-width: 835px) {
+    .title {
+        font-size: var(--tablet-title-size);
+    }
+
+    .title-container {
+        margin-bottom: 50px;
+        padding: 0 10px;
+    }
+
+    .experience-link-container {
+        margin-bottom: 50px;
+    }
+
+    .top-link-container {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .title {
+        font-size: var(--mobile-title-size);
+    }
+}
+
+@media (max-width: 500px) {
+    .title {
+        font-size: var(--xs-title-size);
     }
 }
