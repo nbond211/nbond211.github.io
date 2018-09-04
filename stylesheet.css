@@ -108,8 +108,14 @@ nav a:focus::after {
     margin-bottom: 100px;
 }
 
-.experience-link-container p {
-    cursor: pointer;
+.experience-link {
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+ }
+
+.experience-link p {
     font-size: var(--subtitle-size);
     margin-bottom: 0;
 }
@@ -118,8 +124,8 @@ nav a:focus::after {
     transition: transform 500ms ease-out;
 }
 
-.experience-link-container p:hover ~ img {
-     transform: translateY(15px);
+.experience-link:hover img {
+    transform: translateY(15px);
 }
 
 .experience-container {
@@ -192,5 +198,34 @@ ul, menu, dir {
     border-radius: 5px;
     margin-right: 5px;
     font-size: var(--small-size);
+}
+
+.top-link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.top-link {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.top-link p {
+    font-size: var(--subtitle-size);
+    margin-top: 0;
+}
+
+.top-link img {
+    transform: rotate(180deg);
+    transition: transform 500ms ease-out;
+}
+
+.top-link:hover img {
+    transform: rotate(180deg) translateY(15px);
 }
 
