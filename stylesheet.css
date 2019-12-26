@@ -106,6 +106,35 @@ nav a:focus::after {
     margin-bottom: 0;
 }
 
+.title a {
+    color: var(--color-link);
+    font-weight: var(--bold-weight);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.title a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    background: var(--color-link);
+    transition: width .5s;
+}
+
+.title a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    background: var(--color-link);
+    transition: width .5s;
+}
+
+.title a:hover::after {
+    width: 100%;
+}
+
 .title-emphasis {
     font-weight: var(--bold-weight);
 }
